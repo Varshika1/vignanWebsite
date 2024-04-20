@@ -1,0 +1,128 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.outbox{
+    border: solid 1px;
+    height: 120px;
+    display: flex;
+}
+#box1,#box2{
+    border: solid 1px;
+    height: 120px;
+}
+#box1{
+    width: 300px;
+}
+#box2{
+    width: 1000px;
+    background-color: #933993;
+    text-align: center;
+}
+#clgname{
+    color: #ffffff;
+    font-size: 36px;
+}
+#text1{
+    font-size: 26px;
+    color: #ffffff
+}
+#scrolltext{
+    font-size: 24px;
+    font-weight: bold;
+}
+.navigation{
+    height: 55px;
+}
+ul li{
+    height: 55px;
+    float: left;
+    width: 130px;
+    text-align: center;
+    line-height: 55px;
+    background-color: rgb(172, 188, 213);
+    position: relative;
+}
+ul{
+    list-style: none;
+}
+ul li a{
+    color: #933993;
+    font-size: 20px;
+    text-decoration: none;
+}
+ul ul{
+    position: absolute;
+    display: none;
+}
+ul li:hover>ul{
+    display: block;
+}
+ul li ul li {
+    width: 250px;
+    background-color: #d2e6fa;
+}
+ul li ul li ul li{
+    width: 350px;
+    margin-left: 252px;
+}
+ul ul ul{
+    top: 0px;
+}
+ul li:hover{
+    background-color: hsl(300, 69%, 74%);
+}
+ul li ul li:hover{
+    background-color: hsl(300, 69%, 74%);
+}
+.arrow{
+    color: black;
+}
+.obox{
+    
+    height: 400px;
+    display: flex;
+    justify-content: space-between;
+}
+#in1,#in2,#in3{
+    border: solid 1px;
+    height: 370px;
+}
+#in1{
+     width: 650px;
+     background-image: url(img1.jpg);
+     background-repeat: no-repeat;
+     background-size: 650px 400px;
+     animation-name: imageschanging;
+     animation-duration: 10s;
+     animation-iteration-count: infinite;
+   }
+   @keyframes imageschanging{
+    10%{
+        background-image: url(newim1.jpg);
+    }
+    20%{
+        background-image: url(newim2.jpg);
+    }
+    30%{
+        background-image: url(newim3.jpg);
+    }
+    40%{
+        background-image: url(newim4.jpg);
+    }
+    50%{
+        background-image: url(newim5.jpg);
+    }
+   }
+
+#in2,#in3{
+      width: 290px;
+}
+.out{
+    border: solid 1px;
+    height: 170px;
+    background-color: #933993;
+}
+#logo{
+    padding-right: 123px;
+}
